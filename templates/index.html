@@ -42,7 +42,8 @@
                                             <div>
                                                 <a href="javascript:void(0);"
                                                    class="list-group-item  d-flex align-items-center px-0">
-                                                    <i class="{{ item.icon.text }} fs-18 me-2 p-2" style="color: {{ item.color.text }} !important;"></i>{{ item.text }}
+                                                    <i class="{{ item.icon.text }} fs-18 me-2 p-2"
+                                                       style="color: {{ item.color.text }} !important;"></i>{{ item.text }}
                                                 </a>
                                             </div>
                                             <div class="text-end ms-auto mt-3">
@@ -130,7 +131,10 @@
                             {% for item in files %}
                                 <div class="col-xl-4 col-xxl-3 col-lg-6 col-md-6 col-sm-6">
                                     <div class="card overflow-hidden">
-                                        <img src="{{ item.file.url }}" alt="{{ item.slug }}" style="max-height: 200px;">
+                                        <div class="d-flex justify-content-center">
+                                            <img class="img-fluid" src="{{ item.file.url }}" alt="{{ item.slug }}"
+                                                 style="height: 200px;">
+                                        </div>
                                         <div class="card-footer">
                                             <div class="d-flex">
                                                 <div class="">
